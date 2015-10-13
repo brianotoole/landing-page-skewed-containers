@@ -1,0 +1,4 @@
+#ignored files
+.codekit-cache
+/assets/scss/.sass-cache
+.DS_Store

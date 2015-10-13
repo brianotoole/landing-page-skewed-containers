@@ -1,0 +1,37 @@
+body {
+	background: $white;
+	color: $black;
+}
+a {
+	color: $accent;
+	transition: all 0.4s ease;
+}
+
+// Typography
+// typograhy styles here
+
+// Buttons
+.btn {
+    transition: all 0.4s ease;
+    
+	&.transparent {
+		background-color: transparent;
+		color: $black;
+		border-color: $black;
+	}
+	&.color1 {
+		background-color: $lime;
+		color: white;
+		&:hover {
+			background-color: darken($lime,10%);
+		}
+	}
+	&.color2 {
+		background-color: $color2;
+		color: white;
+		&:hover {
+			background-color: darken($color2,10%);
+		}
+	}
+	
+}//.btn

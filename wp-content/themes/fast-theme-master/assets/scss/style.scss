@@ -1,0 +1,47 @@
+// Main.scss: Table of contents 
+
+// Variables
+
+// Brand Colors
+$main: #1B2E42;
+$accent: #5092D8;
+
+// Others
+$black: #323538;
+$gray: #ccc;
+$lightgray: #f7f7f7;
+$lime: #84bd00;
+$white: #f9f9f9;
+$color2: #222;
+$color3: #333;
+// Mixins
+@mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
+  @if $point == xl {
+    @media (min-width: 1600px) { @content; } //"xl" = above 1600
+  }
+  @if $point == lg {
+    @media (min-width: 1380px) { @content; } //"lg" = above 1380
+  }
+  @else if $point == md {
+    @media (min-width: 1170px) { @content; } //"md" = above 1170
+  }
+  @else if $point == sm {
+    @media (min-width: 768px)  { @content; } //"sm" = above 768
+  }
+  @else if $point == xs {
+    @media (max-width: 768px)  { @content; } // "xs" = below 768
+  }
+  @else if $point == xxs {
+    @media (max-width: 480px)  { @content; } // "xxs" = below 480
+  }
+}
+
+
+// Vendor
+@import "normalize";
+@import "bootstrap";
+@import "linearicons"; //linearicons.com/free#cheat-sheet
+
+// Layout
+@import "base";
+@import "layout";
