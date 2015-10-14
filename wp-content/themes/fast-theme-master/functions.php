@@ -15,9 +15,9 @@ function fast_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'fast' ),
-		'logged-in-menu'  => esc_html__( 'Logged In Menu', 'fast' ),
-		'logged-out-menu'  => esc_html__( 'Logged Out Menu', 'fast' )
+		'primary' => esc_html__( 'Primary Menu', 'fast' )
+		//'logged-in-menu'  => esc_html__( 'Logged In Menu', 'fast' ),
+		//'logged-out-menu'  => esc_html__( 'Logged Out Menu', 'fast' )
 	) );
 
 	/*

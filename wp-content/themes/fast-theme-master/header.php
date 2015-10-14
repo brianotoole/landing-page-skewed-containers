@@ -19,34 +19,8 @@
 
 <div class="wrapper" id="js-wrapper">
 
-  <header id="masthead" class="site-header" role="banner">
-    <div class="sidebar-wrapper">
-      <nav class="sidebar-nav" role="navigation">
-        <?php wp_nav_menu( array(
-           'theme_location' => 'primary',
-           'menu_id' => 'primary-menu'
-         ) ); ?>
-      </nav><!-- .sidebar-nav -->
-    </div><!-- /.sidebar-wrapper -->
-    
     <div class="top-bar">
 	  <div class="container-fluid">
-	    <div class="menu">
-		  <a href="#menu-toggle" class="btn btn-default menu-toggle" id="js-menu-toggle">Menu</a>
-	    </div> 
-	    <div class="user">
-		  <div class="row">
-		
-	        <?php
-				if ( is_user_logged_in() ) {
-				     wp_nav_menu( array( 'theme_location' => 'logged-in-menu') );
-				} else {
-				     wp_nav_menu( array( 'theme_location' => 'logged-out-menu') );
-				}
-		    ?>
-         
-		  </div><!--/.row -->
-	    </div><!--/.user -->
 	  </div><!--/.container-fluid -->
     </div><!--/.top-bar-->
   </header><!-- #masthead -->
