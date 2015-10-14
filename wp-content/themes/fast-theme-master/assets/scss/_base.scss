@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 	display: block;
     margin-top: 30px;
     padding: 15px 40px;
-    width: 175px;
+    width: 200px;
     text-align: center;
     border-radius: 0;
     border: none;
@@ -34,12 +34,12 @@ h1,h2,h3,h4,h5,h6 {
 	}
 	&.transparent { //if transparent, show border
 		background-color: transparent;
-		color: $white;
+		color: $gray;
 		border: 3px solid;
-		border-color: $color3;
+		border-color: $gray;
 		&:hover {
-			border-color: darken($color3,10%);
-			background-color: darken($color3,10%);
+			border-color: darken($gray,10%);
+			background-color: darken($gray,10%);
 		}
 	}
 	&.color1 {
@@ -64,14 +64,17 @@ h1,h2,h3,h4,h5,h6 {
 		}
 	}
 	&.lg{
+		width: 350px;
 	    padding: 25px 60px;
 	    font-size: 1.125em;
 	}
 	&.md{
+		width: 250px;
 	    padding: 15px 50px;
 	    font-size: 1.125em;
 	}
 	&.sm{
+		width: 150px;
 	    padding: 10px 40px;
 	    font-size: 1em;
 	}
