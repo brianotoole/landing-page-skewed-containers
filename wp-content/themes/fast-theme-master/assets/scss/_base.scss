@@ -1,6 +1,7 @@
 body {
 	background: $white;
 	color: $black;
+	font-family: $body;
 	overflow-x: hidden;
 }
 a {
@@ -9,22 +10,43 @@ a {
 }
 
 // Typography
-// typograhy styles here
-
+h1,h2,h3,h4,h5,h6 {
+	font-family: $heading;
+}
 // Buttons
 .btn {
-    transition: all 0.4s ease;
+	display: block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    width: 175px;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    border-color: transparent;
+    transition: all 0.6s ease-in-out;
     
-	&.transparent {
+	&.primary {
+		background-color: $main;
+		color: $white;
+		&:hover {
+			background-color: darken($main,10%);
+		}
+	}
+	&.transparent { //if transparent, show border
 		background-color: transparent;
-		color: $black;
-		border-color: $black;
+		color: $white;
+		border: 3px solid;
+		border-color: $color3;
+		&:hover {
+			border-color: darken($color3,10%);
+			background-color: darken($color3,10%);
+		}
 	}
 	&.color1 {
-		background-color: $lime;
+		background-color: $color2;
 		color: white;
 		&:hover {
-			background-color: darken($lime,10%);
+			background-color: darken($color2,10%);
 		}
 	}
 	&.color2 {
@@ -33,6 +55,25 @@ a {
 		&:hover {
 			background-color: darken($color2,10%);
 		}
+	}
+	&.color3 {
+		background-color: $color3;
+		color: white;
+		&:hover {
+			background-color: darken($color3,10%);
+		}
+	}
+	&.lg{
+	    padding: 25px 60px;
+	    font-size: 1.125em;
+	}
+	&.md{
+	    padding: 15px 50px;
+	    font-size: 1.125em;
+	}
+	&.sm{
+	    padding: 10px 40px;
+	    font-size: 1em;
 	}
 	
 }//.btn

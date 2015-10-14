@@ -19,11 +19,12 @@
 
 <div class="wrapper" id="js-wrapper">
 
-    <div class="top-bar">
-	  <div class="container-fluid">
-	  </div><!--/.container-fluid -->
-    </div><!--/.top-bar-->
-  </header><!-- #masthead -->
-  
+  <div class="row top-bar">
+	<div class="col-xs-3 color color1"></div>
+	<div class="col-xs-3 color color2"></div>
+	<div class="col-xs-3 color color3"></div>
+	<div class="col-xs-3 color color4"></div>
+  </div><!--/.top-bar-->
+
   <div id="content" class="site-content">
  

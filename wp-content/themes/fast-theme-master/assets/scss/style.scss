@@ -12,18 +12,16 @@ $gray: #ccc;
 $lightgray: #f7f7f7;
 $lime: #84bd00;
 $white: #f9f9f9;
-$color2: #222;
-$color3: #333;
+
+$color1: #00A1D2;
+$color2: #8C5EC7;
+$color3: #BB5483;
+$color4: #E0E499;
+
 // Mixins
 @mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
   @if $point == xl {
     @media (min-width: 1600px) { @content; } //"xl" = above 1600
-  }
-  @if $point == lg {
-    @media (min-width: 1380px) { @content; } //"lg" = above 1380
-  }
-  @else if $point == md {
-    @media (min-width: 1170px) { @content; } //"md" = above 1170
   }
   @else if $point == sm {
     @media (min-width: 768px)  { @content; } //"sm" = above 768
@@ -36,6 +34,11 @@ $color3: #333;
   }
 }
 
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+
+$heading: 'Oswald', serif, Helvetica;
+$body: 'Roboto', Verdana, Arial;
 
 // Vendor
 @import "normalize";
