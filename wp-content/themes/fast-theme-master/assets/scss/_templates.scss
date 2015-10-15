@@ -63,27 +63,27 @@ body.page-template-template-landing {
 		    border-left: 5000px solid $gray;//same as background-color of element		
 		}
 		&.one {
-			background: $color4;
+			background: $color1;
 			&.skew-left:after {
-				border-left-color: $color4;//same as background-color of element
+				border-left-color: $color1;//same as background-color of element
 			}
 		}
 		&.two {
-			background: $color3;
-			&.skew-left:after {
-				border-left-color: $color3;//same as background-color of element
-			}
-		}
-		&.three {
 			background: $color2;
 			&.skew-left:after {
 				border-left-color: $color2;//same as background-color of element
 			}
 		}
-		&.four {
-			background: $color1;
+		&.three {
+			background: $color3;
 			&.skew-left:after {
-				border-left-color: $color1;//same as background-color of element
+				border-left-color: $color3;//same as background-color of element
+			}
+		}
+		&.four {
+			background: $color4;
+			&.skew-left:after {
+				border-left-color: $color4;//same as background-color of element
 			}
 		}
 	}

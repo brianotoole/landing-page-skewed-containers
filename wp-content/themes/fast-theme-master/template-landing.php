@@ -28,32 +28,7 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    
-    <div class="container-full section two skew-left">
-      <div class="row content">
-        <div class="col-sm-12">
-          <h1>Heading One</h1>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container-full section three skew-left">
-      <div class="row content">
-        <div class="col-sm-12">
-          <h1>Heading One</h1>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container-full section four skew-left">
-      <div class="row content">
-        <div class="col-sm-12">
-          <h1>Heading One</h1>
-        </div>
-      </div>
-    </div>
- 
-    
+
     <div class="container-full section-3 skew-right">
       <div class="entry-content">
         <div class="row">
