@@ -7,24 +7,12 @@ body.page-template-template-landing {
 .landing {
 
 	.hero {
-		background: $main;
-		height: 500px;
+		background: url('assets/img/hero.jpg') center center no-repeat;
+		background-size: cover;
+		height: 560px;
 		text-align: center;
 		overflow: hidden;
 		color: white;
-		&.skew-left:after { //border-left
-			content: '';
-			display: block;
-		    position: absolute;
-		    top: 450px;
-		    right: -2000px;
-		    z-index: 1001;
-		    height: 0;
-		    width: 0;
-		    border-top: 0px solid rgba(0, 0, 0, 0);
-		    border-bottom: 200px solid rgba(0, 0, 0, 0);
-		    border-left: 5000px solid $main;//same as background-color of element		
-		}
 		
 		.logo {
 			position: relative;
@@ -49,18 +37,33 @@ body.page-template-template-landing {
 		position: relative;
 		height: 150px;
 		text-align: center;
-		&.skew-left:after { //border-left
-			content: '';
-			display: block;
+		&.skew:before { //border-left
+	        content: '';
+		    display: block;
 		    position: absolute;
-		    top: 90px;
-		    right: -2000px;
+		    margin-top: -200px;
+		    margin-right: -2000px;
 		    z-index: 1001;
 		    height: 0;
 		    width: 0;
+		    border-bottom: 0px solid rgba(0, 0, 0, 0);
+		    border-top: 165px solid rgba(0, 0, 0, 0);
+		    border-right: 5000px solid $color1;
+		    height: 200px;		
+		}
+		&.skew:after { //border-left
+	        content: '';
+		    display: block;
+		    position: absolute;
+		    top: 150px;
+		    margin-right: -2000px;
+		    z-index: 1001;
+		    height: 0;
+		    width: 0;
+		    border-bottom: 165px solid rgba(0, 0, 0, 0);
 		    border-top: 0px solid rgba(0, 0, 0, 0);
-		    border-bottom: 200px solid rgba(0, 0, 0, 0);
-		    border-left: 5000px solid $gray;//same as background-color of element		
+		    border-right: 5000px solid $color1;
+		    height: 200px;		
 		}
 		&.one {
 			background: $color1;
@@ -69,9 +72,9 @@ body.page-template-template-landing {
 			}
 		}
 		&.two {
-			background: $color2;
+			background: $color1;
 			&.skew-left:after {
-				border-left-color: $color2;//same as background-color of element
+				border-left-color: $color1;//same as background-color of element
 			}
 		}
 		&.three {
@@ -86,13 +89,6 @@ body.page-template-template-landing {
 				border-left-color: $color4;//same as background-color of element
 			}
 		}
-	}
-	
-	.content {
-		position: relative;
-		margin-top: 0;
-	    padding-top: 85px;
-	    z-index: 1002;
 	}
 	
 	.section-3 {
