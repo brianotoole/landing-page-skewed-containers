@@ -1,4 +1,4 @@
-# FAST, WP Theme build
+# A Landing Page Theme, using my custom "fast-theme" as a framework
 A minimal WP theme; left sidebar, using instantclick.js, Sass, and stripped out bulky WP-functions for a faster & lower-bandwidth site
 
 ## Requirements
