@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Wire+One|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Slab:400,700");
 /*
 Theme Name: Fast
 Theme URI: 
@@ -2961,13 +2961,15 @@ body { background: #f9f9f9; color: #323538; font-family: "Roboto Slab", Verdana,
 
 a { color: #5092D8; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Wire One", serif, Helvetica; }
+h1, h2, h3, h4, h5, h6 { font-family: "Josefin Sans", serif, Helvetica; }
 
-.btn { display: block; margin-top: 30px; padding: 15px 40px; width: 200px; text-align: center; border-radius: 0; border: none; border-color: transparent; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
+.btn { display: block; margin-top: 30px; padding: 15px 40px; width: 200px; text-align: center; border: 1px solid; border-radius: 0; border-color: transparent; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
 .btn.primary { background-color: #1B2E42; color: #f9f9f9; }
 .btn.primary:hover { background-color: #0c151e; }
-.btn.transparent { background-color: transparent; color: #ccc; border: 3px solid; border-color: #ccc; }
+.btn.transparent { background-color: transparent; color: #ccc; border-color: #ccc; }
 .btn.transparent:hover { border-color: #b3b3b3; background-color: #ccc; color: #00A1D2; }
+.btn.multi { background-color: transparent; color: #ccc; border-top-color: #00A1D2; border-right-color: #8C5EC7; border-bottom-color: #BB5483; border-left-color: #E0E499; }
+.btn.multi:hover { background-color: #142130; color: #f9f9f9; border-top-color: #007295; border-right-color: #6d3cac; border-bottom-color: #963c65; border-left-color: #d1d769; }
 .btn.color1 { background-color: #8C5EC7; color: white; }
 .btn.color1:hover { background-color: #723eb4; }
 .btn.color2 { background-color: #8C5EC7; color: white; }

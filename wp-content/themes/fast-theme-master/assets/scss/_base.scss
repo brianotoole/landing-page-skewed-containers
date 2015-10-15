@@ -20,8 +20,8 @@ h1,h2,h3,h4,h5,h6 {
     padding: 15px 40px;
     width: 200px;
     text-align: center;
+    border: 1px solid;
     border-radius: 0;
-    border: none;
     border-color: transparent;
     transition: all 0.6s ease-in-out;
     
@@ -35,12 +35,27 @@ h1,h2,h3,h4,h5,h6 {
 	&.transparent { //if transparent, show border
 		background-color: transparent;
 		color: $gray;
-		border: 3px solid;
 		border-color: $gray;
 		&:hover {
 			border-color: darken($gray,10%);
 			background-color: $gray;
 			color: $color1;
+		}
+	}
+	&.multi { //different color borders
+		background-color: transparent;
+		color: $gray;
+		border-top-color: $color1; 
+		border-right-color: $color2;
+		border-bottom-color: $color3;
+		border-left-color: $color4;
+		&:hover {
+			background-color: darken($main,5%);
+			color: $white;
+			border-top-color: darken($color1,12%); 
+			border-right-color: darken($color2,12%); 
+			border-bottom-color: darken($color3,12%); 
+			border-left-color: darken($color4,12%); 
 		}
 	}
 	&.color1 {

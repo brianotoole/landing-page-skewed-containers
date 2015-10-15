@@ -15,7 +15,7 @@ get_header(); ?>
 	        </div>
 	        <div class="entry-content">
 	          <h1>Simply a Better Way.</h1>
-	          <a class="btn transparent md" href="#">Learn More</a>
+	          <a class="btn multi md" href="#">Learn More</a>
 	        </div>
         </div><!-- /.col-->
       </div><!-- /.row-->
