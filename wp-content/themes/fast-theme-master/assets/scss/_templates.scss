@@ -47,13 +47,13 @@ body.page-template-template-landing {
 	
 	.section {
 		position: relative;
-		height: 175px;
+		height: 150px;
 		text-align: center;
 		&.skew-left:after { //border-left
 			content: '';
 			display: block;
 		    position: absolute;
-		    top: 120px;
+		    top: 90px;
 		    right: -2000px;
 		    z-index: 1001;
 		    height: 0;
@@ -65,25 +65,25 @@ body.page-template-template-landing {
 		&.one {
 			background: $color4;
 			&.skew-left:after {
-				border-left: 5000px solid $color4;//same as background-color of element
+				border-left-color: $color4;//same as background-color of element
 			}
 		}
 		&.two {
 			background: $color3;
 			&.skew-left:after {
-				border-left: 5000px solid $color3;//same as background-color of element
+				border-left-color: $color3;//same as background-color of element
 			}
 		}
 		&.three {
 			background: $color2;
 			&.skew-left:after {
-				border-left: 5000px solid $color2;//same as background-color of element
+				border-left-color: $color2;//same as background-color of element
 			}
 		}
 		&.four {
 			background: $color1;
 			&.skew-left:after {
-				border-left: 5000px solid $color1;//same as background-color of element
+				border-left-color: $color1;//same as background-color of element
 			}
 		}
 	}
@@ -91,7 +91,7 @@ body.page-template-template-landing {
 	.content {
 		position: relative;
 		margin-top: 0;
-	    padding-top: 100px;
+	    padding-top: 85px;
 	    z-index: 1002;
 	}
 	
