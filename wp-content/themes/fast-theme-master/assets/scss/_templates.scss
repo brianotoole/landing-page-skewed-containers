@@ -7,19 +7,19 @@ body.page-template-template-landing {
 .landing {
 
 	.hero {
+		position: relative;
 		background: url('assets/img/hero.jpg') center center no-repeat;
 		background-size: cover;
 		height: 560px;
 		text-align: center;
 		overflow: hidden;
 		color: white;
+		z-index: 1000;
 		
 		.logo {
-			position: relative;
 			display: block;
 			text-align: center;
 			margin: 100px auto 60px auto;
-			z-index: 1002;
 		}
 		
 		.lnr {
@@ -51,46 +51,64 @@ body.page-template-template-landing {
 		    border-right: 5000px solid $color1;
 		    height: 200px;		
 		}
-		&.skew-one:after { //right
-	        content: '';
-		    display: block;
-		    position: absolute;
-		    margin-right: -2000px;
-		    z-index: 1001;
-		    height: 0;
-		    width: 0;
-		    border-bottom: 165px solid rgba(0, 0, 0, 0);
-		    border-top: 0px solid rgba(0, 0, 0, 0);
-		    border-right: 5000px solid $color1;
-		    height: 200px;		
+		&.skew-one {
+			&:after { //right
+		        content: '';
+			    display: block;
+			    position: absolute;
+			    margin-right: -2000px;
+			    z-index: 1001;
+			    height: 0;
+			    width: 0;
+			    border-bottom: 165px solid rgba(0, 0, 0, 0);
+			    border-top: 0px solid rgba(0, 0, 0, 0);
+			    border-right: 5000px solid $color1;//color of container bg
+			    height: 200px;		
+			}
 		}
-		&.skew-two:after { //left
-	        content: '';
-		    display: block;
-		    position: absolute;
-		    top: 150px;
-		    margin-left: -2000px;
-		    z-index: 1001;
-		    height: 0;
-		    width: 0;
-		    border-bottom: 165px solid rgba(0, 0, 0, 0);
-		    border-top: 0px solid rgba(0, 0, 0, 0);
-		    border-left: 5000px solid $color2;
-		    height: 200px;		
+		&.skew-two {
+			&:after { //left
+		        content: '';
+			    display: block;
+			    position: absolute;
+			    margin-left: -2000px;
+			    z-index: 1001;
+			    height: 0;
+			    width: 0;
+			    border-bottom: 165px solid rgba(0, 0, 0, 0);
+			    border-top: 0px solid rgba(0, 0, 0, 0);
+			    border-left: 5000px solid $color2;//color of container bg		
+			}
 		}
-		&.skew-three:after { //right
-	        content: '';
-		    display: block;
-		    position: absolute;
-		    top: 150px;
-		    margin-right: -2000px;
-		    z-index: 1001;
-		    height: 0;
-		    width: 0;
-		    border-bottom: 165px solid rgba(0, 0, 0, 0);
-		    border-top: 0px solid rgba(0, 0, 0, 0);
-		    border-right: 5000px solid $color3;
-		    height: 200px;		
+		&.skew-three {
+			&:after { //right
+		        content: '';
+			    display: block;
+			    position: absolute;
+			    margin-right: -2000px;
+			    z-index: 1001;
+			    height: 0;
+			    width: 0;
+			    border-bottom: 165px solid rgba(0, 0, 0, 0);
+			    border-top: 0px solid rgba(0, 0, 0, 0);
+			    border-right: 5000px solid $color3;//color of container bg
+			    height: 200px;			
+			}
+		}
+		&.skew-four {
+			&:after { //left
+		        content: '';
+			    display: block;
+			    position: absolute;
+			    margin-left: -2000px;
+			    z-index: 1001;
+			    height: 0;
+			    width: 0;
+			    border-bottom: 165px solid rgba(0, 0, 0, 0);
+			    border-top: 0px solid rgba(0, 0, 0, 0);
+			    border-left: 5000px solid $color4;//color of container bg
+			    height: 200px;			
+			}
 		}
 		&.one {
 			background-color: $color1;
@@ -101,39 +119,14 @@ body.page-template-template-landing {
 		&.three {
 			background-color: $color3;
 		}
-	}
-	
-	.section-3 {
-    	position: relative;
-		margin-top: 40px;
-		padding-top: 100px;
-		height: auto;
-		background: $white;
-		text-align: center;
-		z-index: 1000;
-    	&.skew-left:after { //border-left
-			content: '';
-			display: block;
-		    position: absolute;
-		    left: -2000px;
-		    z-index: -1;
-		    height: 0;
-		    width: 0;
-		    border-top: 200px solid rgba(0, 0, 0, 0);
-		    border-bottom: 0px solid rgba(0, 0, 0, 0);
-		    border-left: 5000px solid $white;//same as background-color of element		
+		&.four {
+			background-color: $color4;
+		}
+		.landing-title {
+			padding-top: 120px;
 		}
 	}
 	
-	.section-4 {
-		position: relative;
-		margin-top: 40px;
-		padding-top: 100px;
-		height: auto;
-		background: $color3;
-		text-align: center;
-		z-index: 1000;
-	}
 	
 }//.landing
 

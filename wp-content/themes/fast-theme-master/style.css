@@ -2964,6 +2964,7 @@ a { color: #5092D8; -webkit-transition: all 0.4s ease; transition: all 0.4s ease
 h1, h2, h3, h4, h5, h6 { font-family: "Josefin Sans", serif, Helvetica; }
 
 .btn { display: block; margin-top: 30px; padding: 15px 40px; width: 200px; text-align: center; border: 1px solid; border-radius: 0; border-color: transparent; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
+.btn:hover, .btn:focus { cursor: pointer; }
 .btn.primary { background-color: #1B2E42; color: #f9f9f9; }
 .btn.primary:hover { background-color: #0c151e; }
 .btn.transparent { background-color: transparent; color: #ccc; border-color: #ccc; }
@@ -2980,8 +2981,8 @@ h1, h2, h3, h4, h5, h6 { font-family: "Josefin Sans", serif, Helvetica; }
 .btn.md { width: 250px; padding: 15px 50px; font-size: 1.125em; }
 .btn.sm { width: 150px; padding: 10px 40px; font-size: 1em; }
 
-.wrapper .entry-content { position: relative; margin: 0; padding: 0 15px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
-@media (min-width: 768px) { .wrapper .entry-content { padding: 0 40px; } }
+.wrapper .entry-content { position: relative; margin: 0; padding: 0 30px; z-index: 1002; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+@media (min-width: 768px) { .wrapper .entry-content { padding: 0 120px; } }
 
 #instantclick-bar { background: #5092D8; }
 
@@ -2994,20 +2995,20 @@ h1, h2, h3, h4, h5, h6 { font-family: "Josefin Sans", serif, Helvetica; }
 
 .footer { margin: 20px auto; text-align: center; padding: 20px 0; border-top: 1px solid #ccc; }
 
-.landing .hero { background: url("assets/img/hero.jpg") center center no-repeat; background-size: cover; height: 560px; text-align: center; overflow: hidden; color: white; }
-.landing .hero .logo { position: relative; display: block; text-align: center; margin: 100px auto 60px auto; z-index: 1002; }
+.landing .hero { position: relative; background: url("assets/img/hero.jpg") center center no-repeat; background-size: cover; height: 560px; text-align: center; overflow: hidden; color: white; z-index: 1000; }
+.landing .hero .logo { display: block; text-align: center; margin: 100px auto 60px auto; }
 .landing .hero .lnr { color: #00A1D2; font-size: 100px; }
 .landing .hero .btn { margin: 40px auto; }
 .landing .section { position: relative; height: auto; text-align: center; }
 .landing .section.skew-one:before { content: ''; display: block; position: absolute; margin-top: -200px; margin-right: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 0px solid transparent; border-top: 165px solid transparent; border-right: 5000px solid #00A1D2; height: 200px; }
 .landing .section.skew-one:after { content: ''; display: block; position: absolute; margin-right: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 165px solid transparent; border-top: 0px solid transparent; border-right: 5000px solid #00A1D2; height: 200px; }
-.landing .section.skew-two:after { content: ''; display: block; position: absolute; top: 150px; margin-left: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 165px solid transparent; border-top: 0px solid transparent; border-left: 5000px solid #8C5EC7; height: 200px; }
-.landing .section.skew-three:after { content: ''; display: block; position: absolute; top: 150px; margin-right: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 165px solid transparent; border-top: 0px solid transparent; border-right: 5000px solid #BB5483; height: 200px; }
+.landing .section.skew-two:after { content: ''; display: block; position: absolute; margin-left: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 165px solid transparent; border-top: 0px solid transparent; border-left: 5000px solid #8C5EC7; }
+.landing .section.skew-three:after { content: ''; display: block; position: absolute; margin-right: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 165px solid transparent; border-top: 0px solid transparent; border-right: 5000px solid #BB5483; height: 200px; }
+.landing .section.skew-four:after { content: ''; display: block; position: absolute; margin-left: -2000px; z-index: 1001; height: 0; width: 0; border-bottom: 165px solid transparent; border-top: 0px solid transparent; border-left: 5000px solid #E0E499; height: 200px; }
 .landing .section.one { background-color: #00A1D2; }
 .landing .section.two { background-color: #8C5EC7; }
 .landing .section.three { background-color: #BB5483; }
-.landing .section-3 { position: relative; margin-top: 40px; padding-top: 100px; height: auto; background: #f9f9f9; text-align: center; z-index: 1000; }
-.landing .section-3.skew-left:after { content: ''; display: block; position: absolute; left: -2000px; z-index: -1; height: 0; width: 0; border-top: 200px solid transparent; border-bottom: 0px solid transparent; border-left: 5000px solid #f9f9f9; }
-.landing .section-4 { position: relative; margin-top: 40px; padding-top: 100px; height: auto; background: #BB5483; text-align: center; z-index: 1000; }
+.landing .section.four { background-color: #E0E499; }
+.landing .section .landing-title { padding-top: 120px; }
 
 /*# sourceMappingURL=style.css.map */

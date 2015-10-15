@@ -24,6 +24,9 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 0;
     border-color: transparent;
     transition: all 0.6s ease-in-out;
+    &:hover, &:focus {
+	    cursor: pointer;
+    }
     
 	&.primary {
 		background-color: $main;
