@@ -35,9 +35,9 @@ body.page-template-template-landing {
 	
 	.section {
 		position: relative;
-		height: 150px;
+		height: auto;
 		text-align: center;
-		&.skew:before { //border-left
+		&.skew-one:before { //right
 	        content: '';
 		    display: block;
 		    position: absolute;
@@ -51,7 +51,34 @@ body.page-template-template-landing {
 		    border-right: 5000px solid $color1;
 		    height: 200px;		
 		}
-		&.skew:after { //border-left
+		&.skew-one:after { //right
+	        content: '';
+		    display: block;
+		    position: absolute;
+		    margin-right: -2000px;
+		    z-index: 1001;
+		    height: 0;
+		    width: 0;
+		    border-bottom: 165px solid rgba(0, 0, 0, 0);
+		    border-top: 0px solid rgba(0, 0, 0, 0);
+		    border-right: 5000px solid $color1;
+		    height: 200px;		
+		}
+		&.skew-two:after { //left
+	        content: '';
+		    display: block;
+		    position: absolute;
+		    top: 150px;
+		    margin-left: -2000px;
+		    z-index: 1001;
+		    height: 0;
+		    width: 0;
+		    border-bottom: 165px solid rgba(0, 0, 0, 0);
+		    border-top: 0px solid rgba(0, 0, 0, 0);
+		    border-left: 5000px solid $color2;
+		    height: 200px;		
+		}
+		&.skew-three:after { //right
 	        content: '';
 		    display: block;
 		    position: absolute;
@@ -62,32 +89,17 @@ body.page-template-template-landing {
 		    width: 0;
 		    border-bottom: 165px solid rgba(0, 0, 0, 0);
 		    border-top: 0px solid rgba(0, 0, 0, 0);
-		    border-right: 5000px solid $color1;
+		    border-right: 5000px solid $color3;
 		    height: 200px;		
 		}
 		&.one {
-			background: $color1;
-			&.skew-left:after {
-				border-left-color: $color1;//same as background-color of element
-			}
+			background-color: $color1;
 		}
 		&.two {
-			background: $color1;
-			&.skew-left:after {
-				border-left-color: $color1;//same as background-color of element
-			}
+			background-color: $color2;
 		}
 		&.three {
-			background: $color3;
-			&.skew-left:after {
-				border-left-color: $color3;//same as background-color of element
-			}
-		}
-		&.four {
-			background: $color4;
-			&.skew-left:after {
-				border-left-color: $color4;//same as background-color of element
-			}
+			background-color: $color3;
 		}
 	}
 	
